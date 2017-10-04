@@ -422,13 +422,13 @@ label {
 }
 
 .updates-wrapper {
+  margin: 0 auto;
   margin-top: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
+  max-width: 345px;
 }
 
 .updates {
-
+  position: relative;
 }
 
 .updates h3 {
@@ -440,6 +440,30 @@ label {
 
 .blog-posts {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 90px;
+}
+
+.blog-posts li {
+  margin-top: 13px;
+  padding-left: 65px;
+}
+
+.first-update {
+  background-image: url('../img/updates1.png');
+  background-repeat: no-repeat;
+}
+
+.second-update {
+  background-image: url('../img/updates2.png');
+  background-repeat: no-repeat;
+}
+
+.third-update {
+  background-image: url('../img/updates3.png');
+  background-repeat: no-repeat;
+  padding-bottom: 40px;
 }
 
 .blog-posts h4 {
@@ -447,6 +471,7 @@ label {
   font-family: 'Open Sans' , sans-serif;
   font-weight: 700;
   font-size: 16px;
+  line-height: 24px;
   color: #454545;
 }
 
@@ -454,6 +479,26 @@ label {
   margin: 0;
   font-family: 'Open Sans' , sans-serif;
   font-size: 16px;
+  line-height: 26px;
   font-weight: 300;
   color: #454545;
+}
+
+.more-blog-posts {
+  text-align: right;
+  font-family: 'League Gothic' , Arial , sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #454545;
+  text-decoration: none;
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+}
+
+.more-blog-posts:hover ,
+.more-blog-posts:focus {
+  text-decoration: underline;
+  cursor: pointer;
+  outline:none;
 }
