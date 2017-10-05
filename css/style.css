@@ -41,6 +41,7 @@
 
 .header {
   background-image: url('../img/header-bg.png');
+  background-repeat: no-repeat;
   background-position: top center;
 }
 
@@ -559,6 +560,7 @@ label {
 
 .footer {
   background-image: url('../img/footer-bg.png');
+  background-repeat: no-repeat;
   background-position: bottom center;
 }
 
@@ -580,6 +582,10 @@ label {
 }
 
 .for-768px {
+  display: none;
+}
+
+.show-on-980px {
   display: none;
 }
 
@@ -680,7 +686,7 @@ label {
     font-family: 'Open Sans' , Arial , sans-serif;
     font-weight: 300;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 23px;
     color: #787878;
   }
 
@@ -924,6 +930,11 @@ label {
 
 @media (min-width:960px) {
 
+  .header {
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
   .logotype-navigation {
     margin: 0 auto;
     max-width: 960px;
@@ -1014,21 +1025,96 @@ label {
   }
 
   .reviews-updates-wrapper {
+    justify-content: center;
   }
 
   .review-wrapper {
     flex-basis: 480px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
   }
 
   .updates-wrapper {
-    width: 480px;
+    flex-basis: 480px;
     margin: 0;
-    padding: 0;
+    padding-top: 50px;
+    max-width: 480px;
   }
 
-  .blog-posts {
-    width: 100%;
+  .partners {
+    max-width: 960px;
+    margin: 0 auto;
   }
+
+  .hide-on-980px {
+    display: none;
+  }
+
+  .show-on-980px {
+    display: block;
+  }
+
+  .show-on-980px h3{
+    font-family: 'League Gothic' , Arial , sans-serif;
+    font-size: 48px;
+    line-height: 60px;
+    color: #454545;
+  }
+
+  .show-on-980px h3 .er-gray {
+    font-family: 'League Gothic' , Arial , sans-serif;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 60px;
+    color: #b9b9b9;
+  }
+
+  .show-on-980px span {
+    font-family: Georgia , serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+    color: #c5c5c5;
+  }
+
+  .show-on-980px p {
+    max-height: 111px;
+    overflow: hidden;
+  }
+
+  .news-categories-wrapper {
+    margin: 0;
+    padding: 0;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .news-categories {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .news-categories li {
+    flex-basis: 320px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 250px;
+  }
+
+  .footer {
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .footer-flex-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer h5 {
+    padding-top: 55px;
+    padding-bottom: 45px;
+  }
+
 }
