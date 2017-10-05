@@ -921,3 +921,114 @@ label {
   }
 
 }
+
+@media (min-width:960px) {
+
+  .logotype-navigation {
+    margin: 0 auto;
+    max-width: 960px;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logotype-navigation .logotype {
+    padding: 0;
+  }
+
+  .navigation {
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  .navigation-list {
+    padding: 0;
+  }
+
+  .navigation-list li {
+    margin-right: 40px;
+  }
+
+  .header-slider-wrapper {
+    margin-bottom: 50px;
+  }
+
+  .header-slider {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .header-slider h2 {
+    padding: 0;
+    font-size: 60px;
+  }
+
+  .header-slider p {
+    padding: 0;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .header-slider .for-768px {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 502px;
+    max-height: 150px;
+  }
+
+  .header-slider button {
+    display: none;
+  }
+
+  .header-slider .for-480px {
+    right: 75px;
+  }
+
+  .header-slider .radio_button-items {
+    margin-left: 700px;
+  }
+
+  .about-company-wrapper {
+    justify-content: center;
+  }
+
+  .company-information {
+    flex-basis: 320px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .company-information {
+    background-position-x:10px ;
+    background-position-y:25px ;
+  }
+
+  .company-information:nth-child(2n){
+    background-image: url('../img/ask.png');
+  }
+
+  .company-information:last-child {
+    background-image: url('../img/music.png');
+  }
+
+  .reviews-updates-wrapper {
+  }
+
+  .review-wrapper {
+    flex-basis: 480px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .updates-wrapper {
+    width: 480px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .blog-posts {
+    width: 100%;
+  }
+}
