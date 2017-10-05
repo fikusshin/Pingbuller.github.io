@@ -327,6 +327,7 @@ label {
 .company-information .read-more:focus ,
 .company-information .read-more:hover {
   text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+  outline: none;
 }
 
 /* review and updates block */
@@ -455,6 +456,7 @@ label {
   font-family: 'League Gothic', Arial , sans-serif;
   font-size: 30px;
   color: #454545;
+  text-transform: uppercase;
 }
 
 .blog-posts {
@@ -575,6 +577,10 @@ label {
 .footer span {
   font-family: 'Open Sans' , Arial , sans-serif;
   font-weight: 800;
+}
+
+.for-768px {
+  display: none;
 }
 
 @media (min-width:480px) {
@@ -701,6 +707,217 @@ label {
   .footer-navigation a:hover ,
   .footer-navigation a:focus {
     text-decoration: underline;
+    outline: none;
+  }
+
+}
+
+@media (min-width:768px) {
+
+  .logotype-navigation .logotype {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .navigation {
+    padding-left: 20px;
+    justify-content: flex-start;
+  }
+
+  .navigation-list {
+    padding-right: 115px;
+    position: static;
+    flex-direction: row;
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
+
+  .navigation-list li {
+  }
+
+  .navigation-list a {
+    padding: 0;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .navigation-list li:last-child ,
+  .navigation-list li:first-child {
+    padding: 0;
+  }
+
+  .navigation-list .active a{
+    border-bottom: none;
+  }
+
+  .navigation-list:hover,
+  .navigation-list:focus {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    background-color: inherit;
+    width: auto;
+    border-radius: none;
+  }
+
+  .navigation-list li:hover,
+  .navigation-list li:focus {
+    width: inherit;
+    display: inline;
+  }
+
+  .navigation-list a:hover,
+  .navigation-list a:focus {
+    outline:none;
+    text-decoration: underline;
+  }
+
+  .navigation-list li:hover>a,
+  .navigation-list li:focus>a {
+    display: block;
+    width: auto;
+    background-color: inherit;
+    line-height: inherit;
+    border-bottom: none;
+  }
+
+  .navigation-list:hover>li,
+  .navigation-list:focus>li {
+    display: block;
+    width: auto;
+    border-bottom: none;
+    border-top: none;
+    text-align: center;
+  }
+
+  .header-slider-wrapper {
+    height: 400px;
+  }
+
+  .header-slider h2 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .header-slider p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .header-slider button {
+    padding: 0;
+    margin-top: -96px;
+    border: none;
+    background: none;
+    outline:none;
+    cursor: pointer;
+    width: 24px;
+    height: 36px;
+    border-radius: 8px;
+  }
+
+  .header-slider .for-480px {
+    width: auto;
+    bottom: -195px;
+  }
+
+  .header-slider .for-768px {
+    display: block;
+    font-family: 'Open Sans' , Arial , sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 280px;
+    max-height: 100px;
+    overflow: hidden;
+    color: #fff;
+  }
+
+  .header-slider .radio_button-items {
+    margin-left: 70%;
+  }
+
+  .header-slider .radio_button-items {
+    margin-top: 150px;
+  }
+
+  .about-company-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .company-information p {
+    max-height: 154px;
+  }
+
+  .company-information .read-more {
+    right: 40px;
+  }
+
+  .reviews-updates-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .review-wrapper {
+    flex-basis: 50%;
+  }
+
+  .review p {
+    height: 142px;
+    padding-right: 25px;
+    overflow: hidden;
+  }
+
+  .updates-wrapper {
+    flex-basis: 50%;
+  }
+
+  .updates {
+    padding-top: 50px;
+  }
+
+  .partners {
+    padding: 0;
+  }
+
+  .partners li {
+    flex-basis: 16.5%;
+  }
+
+  .news-categories-wrapper {
+    padding-bottom: 80px;
+  }
+
+  .news-categories {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .news-categories li {
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 168px;
+    overflow: hidden;
+  }
+
+  .footer-navigation {
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+
+  .footer-navigation li {
+    margin-left: 20px;
+    margin-right:20px;
+  }
+
+  .footer h5 {
+    text-align: right;
+    font-size: 12px;
+    padding-right: 30px;
+    padding-bottom: 65px;
   }
 
 }
