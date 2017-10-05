@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/*  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
-@import url('../fonts/fonts.css');
+@import url('../fonts/fonts.css'); */
 @import url('normalize.css');
 
 .black-shadow-light {
@@ -249,6 +249,10 @@ label {
   box-shadow: 0 0 0 3px rgba(255,255,0,.5);
 }
 
+.for-480px {
+  display: none;
+}
+
 /* victory!!! */
 
 /* about company block */
@@ -256,12 +260,12 @@ label {
 /*  .content-wrapper {
   -webkit-box-shadow: -6px 6px 6px 6px rgba(0, 0, 0, 0.58);
   -moz-box-shadow:    -6px 6px 6px 6px rgba(0, 0, 0, 0.58);
-  box-shadow:         -6px 6px 6px 6px rgba(0, 0, 0, 0.58);  NOTE: solve problem with shadow; */
-}
+  box-shadow:         -6px 6px 6px 6px rgba(0, 0, 0, 0.58);
+}*/
 
 .about-company-wrapper {
-  padding-top: 50px;
-  padding-bottom: 55px;
+  padding-top: 40px;
+  padding-bottom: 75px;
   -webkit-box-shadow: 0px 5px 8px 0px rgba(50, 50, 50, 0.1);
   -moz-box-shadow:    0px 5px 8px 0px rgba(50, 50, 50, 0.1);
   box-shadow:         0px 5px 8px 0px rgba(50, 50, 50, 0.1);
@@ -294,20 +298,24 @@ label {
 
 .company-information p {
   margin: 0;
-  padding-right: 24px;
+  padding-right: 30px;
   padding-bottom: 20px;
   font-family: 'Open Sans' , Arial , sans-serif;
   font-weight: 300;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 26px;
   color: #fff;
+  max-height: 84px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .company-information .read-more {
   position: absolute;
   padding: 0;
   right: 5px;
-  bottom: 0;
+  bottom: -15px;
   font-family: 'League Gothic' , Arial , sans-serif;
   font-size: 18px;
   color: #fff;
@@ -336,11 +344,15 @@ label {
   margin-left: 44px;
   margin-right: 20px;
   padding-left: 38px;
+  padding-bottom: 30px;
   background-color: #fff;
   position: relative;
   -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   -moz-box-shadow:    0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   box-shadow:         0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .review h3 {
@@ -364,11 +376,12 @@ label {
 .review p {
   margin: 0;
   padding-right: 45px;
-  padding-bottom: 30px;
   font-family: 'Open Sans' , Arial , sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 23px;
   color: #454545;
+  max-height: 160px;
+  overflow: hidden;
 }
 
 .review img {
@@ -528,7 +541,7 @@ label {
 }
 
 .partners li {
- flex:0 0 50%;
+ flex-basis: 50%;
  margin-top: 30px;
  margin-bottom: 30px;
  text-align: center;
@@ -545,12 +558,11 @@ label {
 .footer {
   background-image: url('../img/footer-bg.png');
   background-position: bottom center;
-  z-index: -1;
 }
 
 .footer h5 {
   padding-top: 40px;
-  padding-bottom: 145px;
+  padding-bottom: 85px;
   margin: 0;
   text-align: center;
   font-family: 'Open Sans' , Arial , sans-serif;
@@ -563,4 +575,132 @@ label {
 .footer span {
   font-family: 'Open Sans' , Arial , sans-serif;
   font-weight: 800;
+}
+
+@media (min-width:480px) {
+
+  .header {
+    padding-bottom : 100px;
+  }
+
+  .navigation {
+    z-index: 1;
+  }
+
+  .header-slider-wrapper {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 73px;
+    height: 245px;
+    padding-top: 94px;
+    text-align: left;
+    background-color: rgba(0,0,0,0.2);
+  }
+
+  .header-slider h2 , .header-slider p {
+    padding-left:40px;
+  }
+
+  .header-slider h2 {
+    position: relative;
+  }
+
+  .for-480px {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 186px;
+    bottom: -113px;
+    right: 32px;
+  }
+
+  .header-slider .radio_button-items {
+    padding: 0;
+    margin-top: 115px;
+  }
+
+  .company-information {
+    word-wrap: break-word;
+  }
+
+  .company-information .read-more {
+    right: 25px;
+  }
+
+  .review p {
+    max-height: 100%;
+  }
+
+  .partners {
+    padding: 0;
+    padding-top: 10px;
+    padding-right: 65px;
+    padding-left: 65px;
+  }
+
+  .partners li {
+    flex-basis: 33%;
+  }
+
+  .news-categories-wrapper {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ececec;
+  }
+
+  .news-categories {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .news-categories li {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .news-categories h3 {
+    margin: 0;
+    font-family: 'League Gothic' , Arial , sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    color: #454545;
+  }
+
+  .news-categories p {
+    margin: 0;
+    font-family: 'Open Sans' , Arial , sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #787878;
+  }
+
+  .footer-navigation {
+    margin: 0;
+    padding-top: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style-type: none;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'League Gothic' , Arial , sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .footer-navigation a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .footer-navigation a:hover ,
+  .footer-navigation a:focus {
+    text-decoration: underline;
+  }
+
 }
