@@ -253,6 +253,13 @@ label {
 
 /* about company block */
 
+.content-wrapper {
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow:    0px 0px 6px 0px rgba(0, 0, 0, 0.58);
+  box-shadow:         0px 0px 6px 0px rgba(0, 0, 0, 0.58);
+  z-index: 1;
+}
+
 .about-company-wrapper {
   padding-top: 50px;
   padding-bottom: 55px;
@@ -501,4 +508,60 @@ label {
   text-decoration: underline;
   cursor: pointer;
   outline:none;
+}
+
+.our-partners-wrapper {
+  background-color: #f9f9f9;
+  border-top:1px solid #fefefe;
+  border-bottom: 1px solid #fefefe;
+}
+
+.partners {
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 45px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.partners li {
+ flex:0 0 50%;
+ margin-top: 30px;
+ margin-bottom: 30px;
+ text-align: center;
+}
+
+.news-categories-wrapper {
+  display: none;
+}
+
+.footer-navigation {
+  display: none;
+}
+
+.footer {
+  background-image: url('../img/footer-bg.png');
+  background-position: bottom center;
+  z-index: -1;
+}
+
+.footer h5 {
+  padding-top: 40px;
+  padding-bottom: 145px;
+  margin: 0;
+  text-align: center;
+  font-family: 'Open Sans' , Arial , sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.footer span {
+  font-family: 'Open Sans' , Arial , sans-serif;
+  font-weight: 800;
 }
